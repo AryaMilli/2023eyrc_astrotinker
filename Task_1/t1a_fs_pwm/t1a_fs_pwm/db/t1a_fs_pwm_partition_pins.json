@@ -24,11 +24,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "duty_cycle[0]",
+					"name" : "duty_cycle[1]",
 					"strict" : false
 				},
 				{
-					"name" : "duty_cycle[1]",
+					"name" : "duty_cycle[0]",
 					"strict" : false
 				},
 				{

@@ -1,5 +1,5 @@
 Fitter report for t1a_fs_pwm
-Sun Oct 08 15:36:09 2023
+Thu Oct 12 21:49:03 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -68,17 +68,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Oct 08 15:36:09 2023       ;
+; Fitter Status                      ; Successful - Thu Oct 12 21:49:03 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; t1a_fs_pwm                                  ;
 ; Top-level Entity Name              ; t1a_fs_pwm_bdf                              ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 17 / 22,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 15 / 22,320 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 13 / 22,320 ( < 1 % )                       ;
-; Total registers                    ; 13                                          ;
+; Total logic elements               ; 13 / 22,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 12 / 22,320 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 10 / 22,320 ( < 1 % )                       ;
+; Total registers                    ; 10                                          ;
 ; Total pins                         ; 8 / 154 ( 5 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.3%      ;
-;     Processors 3-8         ;   0.2%      ;
+;     Processors 3-8         ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -171,8 +171,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 58 ) ; 0.00 % ( 0 / 58 )          ; 0.00 % ( 0 / 58 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 58 ) ; 0.00 % ( 0 / 58 )          ; 0.00 % ( 0 / 58 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 51 ) ; 0.00 % ( 0 / 51 )          ; 0.00 % ( 0 / 51 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 51 ) ; 0.00 % ( 0 / 51 )          ; 0.00 % ( 0 / 51 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -195,7 +195,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 48 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 41 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -203,7 +203,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_files/t1a_fs_pwm.pin.
+The pin-out file can be found in D:/eyantra/2023eyrc_astrotinker/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_files/t1a_fs_pwm.pin.
 
 
 +---------------------------------------------------------------------+
@@ -211,26 +211,26 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 17 / 22,320 ( < 1 % ) ;
-;     -- Combinational with no register       ; 4                     ;
-;     -- Register only                        ; 2                     ;
-;     -- Combinational with a register        ; 11                    ;
+; Total logic elements                        ; 13 / 22,320 ( < 1 % ) ;
+;     -- Combinational with no register       ; 3                     ;
+;     -- Register only                        ; 1                     ;
+;     -- Combinational with a register        ; 9                     ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 4                     ;
-;     -- 3 input functions                    ; 5                     ;
-;     -- <=2 input functions                  ; 6                     ;
-;     -- Register only                        ; 2                     ;
+;     -- 3 input functions                    ; 4                     ;
+;     -- <=2 input functions                  ; 4                     ;
+;     -- Register only                        ; 1                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 15                    ;
+;     -- normal mode                          ; 12                    ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
-; Total registers*                            ; 13 / 23,018 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 13 / 22,320 ( < 1 % ) ;
+; Total registers*                            ; 10 / 23,018 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 10 / 22,320 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 698 ( 0 % )       ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 3 / 1,395 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 2 / 1,395 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 8 / 154 ( 5 % )       ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )        ;
@@ -241,8 +241,8 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ; Total block memory implementation bits      ; 0 / 608,256 ( 0 % )   ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )       ;
 ; PLLs                                        ; 0 / 4 ( 0 % )         ;
-; Global signals                              ; 3                     ;
-;     -- Global clocks                        ; 3 / 20 ( 15 % )       ;
+; Global signals                              ; 2                     ;
+;     -- Global clocks                        ; 2 / 20 ( 10 % )       ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )         ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
@@ -250,10 +250,10 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%    ;
 ; Peak interconnect usage (total/H/V)         ; 0.1% / 0.1% / 0.2%    ;
-; Maximum fan-out                             ; 5                     ;
-; Highest non-global fan-out                  ; 5                     ;
-; Total fan-out                               ; 87                    ;
-; Average fan-out                             ; 1.47                  ;
+; Maximum fan-out                             ; 6                     ;
+; Highest non-global fan-out                  ; 6                     ;
+; Total fan-out                               ; 73                    ;
+; Average fan-out                             ; 1.43                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -266,33 +266,33 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 17 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
-;     -- Combinational with no register       ; 4                    ; 0                              ;
-;     -- Register only                        ; 2                    ; 0                              ;
-;     -- Combinational with a register        ; 11                   ; 0                              ;
+; Total logic elements                        ; 13 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
+;     -- Combinational with no register       ; 3                    ; 0                              ;
+;     -- Register only                        ; 1                    ; 0                              ;
+;     -- Combinational with a register        ; 9                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
 ;     -- 4 input functions                    ; 4                    ; 0                              ;
-;     -- 3 input functions                    ; 5                    ; 0                              ;
-;     -- <=2 input functions                  ; 6                    ; 0                              ;
-;     -- Register only                        ; 2                    ; 0                              ;
+;     -- 3 input functions                    ; 4                    ; 0                              ;
+;     -- <=2 input functions                  ; 4                    ; 0                              ;
+;     -- Register only                        ; 1                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 15                   ; 0                              ;
+;     -- normal mode                          ; 12                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 13                   ; 0                              ;
-;     -- Dedicated logic registers            ; 13 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
+; Total registers                             ; 10                   ; 0                              ;
+;     -- Dedicated logic registers            ; 10 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 3 / 1395 ( < 1 % )   ; 0 / 1395 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 2 / 1395 ( < 1 % )   ; 0 / 1395 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 8                    ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )      ; 0 / 132 ( 0 % )                ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
-; Clock control block                         ; 3 / 24 ( 12 % )      ; 0 / 24 ( 0 % )                 ;
+; Clock control block                         ; 2 / 24 ( 8 % )       ; 0 / 24 ( 0 % )                 ;
 ;                                             ;                      ;                                ;
 ; Connections                                 ;                      ;                                ;
 ;     -- Input Connections                    ; 0                    ; 0                              ;
@@ -301,8 +301,8 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 82                   ; 5                              ;
-;     -- Registered Connections               ; 39                   ; 0                              ;
+;     -- Total Connections                    ; 68                   ; 5                              ;
+;     -- Registered Connections               ; 32                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -335,10 +335,10 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; clk_50M       ; E1    ; 1        ; 0            ; 16           ; 7            ; 4                     ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; duty_cycle[0] ; L4    ; 2        ; 0            ; 6            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; duty_cycle[1] ; N1    ; 2        ; 0            ; 7            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; duty_cycle[2] ; N2    ; 2        ; 0            ; 8            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; duty_cycle[3] ; K5    ; 2        ; 0            ; 7            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; duty_cycle[0] ; P2    ; 2        ; 0            ; 4            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; duty_cycle[1] ; R3    ; 3        ; 1            ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; duty_cycle[2] ; P1    ; 2        ; 0            ; 4            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; duty_cycle[3] ; R1    ; 2        ; 0            ; 5            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -347,9 +347,9 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 +-------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; clk_195KHz  ; D8    ; 8        ; 23           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; clk_195KHz  ; N3    ; 3        ; 1            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; clk_3125KHz ; P8    ; 3        ; 25           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; pwm_signal  ; R1    ; 2        ; 0            ; 5            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; pwm_signal  ; P3    ; 3        ; 1            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -380,13 +380,13 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
 +----------+-----------------+---------------+--------------+
 ; 1        ; 5 / 14 ( 36 % ) ; 2.5V          ; --           ;
-; 2        ; 5 / 16 ( 31 % ) ; 2.5V          ; --           ;
-; 3        ; 1 / 25 ( 4 % )  ; 2.5V          ; --           ;
+; 2        ; 3 / 16 ( 19 % ) ; 2.5V          ; --           ;
+; 3        ; 4 / 25 ( 16 % ) ; 2.5V          ; --           ;
 ; 4        ; 0 / 20 ( 0 % )  ; 2.5V          ; --           ;
 ; 5        ; 0 / 18 ( 0 % )  ; 2.5V          ; --           ;
 ; 6        ; 1 / 13 ( 8 % )  ; 2.5V          ; --           ;
 ; 7        ; 0 / 24 ( 0 % )  ; 2.5V          ; --           ;
-; 8        ; 1 / 24 ( 4 % )  ; 2.5V          ; --           ;
+; 8        ; 0 / 24 ( 0 % )  ; 2.5V          ; --           ;
 +----------+-----------------+---------------+--------------+
 
 
@@ -450,7 +450,7 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ; D5       ; 241        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D6       ; 234        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; D8       ; 216        ; 8        ; clk_195KHz                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D8       ; 216        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D9       ; 201        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D11      ; 177        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -544,7 +544,7 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ; K2       ; 36         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K3       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; K5       ; 45         ; 2        ; duty_cycle[3]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K5       ; 45         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K6       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K8       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -559,7 +559,7 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ; L1       ; 39         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L2       ; 38         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L3       ; 40         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; L4       ; 46         ; 2        ; duty_cycle[0]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L4       ; 46         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L5       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L6       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; L7       ; 75         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -588,9 +588,9 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ; M14      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M15      ; 149        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M16      ; 148        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; N1       ; 44         ; 2        ; duty_cycle[1]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N2       ; 43         ; 2        ; duty_cycle[2]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N3       ; 52         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N1       ; 44         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N2       ; 43         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N3       ; 52         ; 3        ; clk_195KHz                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N4       ;            ;          ; VCCD_PLL1                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N5       ; 62         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N6       ; 63         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -604,9 +604,9 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ; N14      ; 126        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N15      ; 133        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N16      ; 132        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; P1       ; 51         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; P2       ; 50         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; P3       ; 53         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; P1       ; 51         ; 2        ; duty_cycle[2]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P2       ; 50         ; 2        ; duty_cycle[0]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P3       ; 53         ; 3        ; pwm_signal                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; P4       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P6       ; 67         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -620,9 +620,9 @@ The pin-out file can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_
 ; P14      ; 119        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P15      ; 127        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P16      ; 128        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; R1       ; 49         ; 2        ; pwm_signal                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R1       ; 49         ; 2        ; duty_cycle[3]                                             ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; R3       ; 54         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R3       ; 54         ; 3        ; duty_cycle[1]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; R4       ; 60         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R5       ; 71         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R6       ; 73         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -666,16 +666,16 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; clk_3125KHz   ; Incomplete set of assignments ;
 ; duty_cycle[3] ; Incomplete set of assignments ;
 ; duty_cycle[2] ; Incomplete set of assignments ;
-; duty_cycle[0] ; Incomplete set of assignments ;
 ; duty_cycle[1] ; Incomplete set of assignments ;
+; duty_cycle[0] ; Incomplete set of assignments ;
 ; clk_50M       ; Incomplete set of assignments ;
 ; pwm_signal    ; Missing location assignment   ;
 ; clk_195KHz    ; Missing location assignment   ;
 ; clk_3125KHz   ; Missing location assignment   ;
 ; duty_cycle[3] ; Missing location assignment   ;
 ; duty_cycle[2] ; Missing location assignment   ;
-; duty_cycle[0] ; Missing location assignment   ;
 ; duty_cycle[1] ; Missing location assignment   ;
+; duty_cycle[0] ; Missing location assignment   ;
 ; clk_50M       ; Missing location assignment   ;
 +---------------+-------------------------------+
 
@@ -685,9 +685,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node      ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                        ; Entity Name       ; Library Name ;
 +---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------+-------------------+--------------+
-; |t1a_fs_pwm_bdf                 ; 17 (0)      ; 13 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 8    ; 0            ; 4 (0)        ; 2 (0)             ; 11 (0)           ; |t1a_fs_pwm_bdf                            ; t1a_fs_pwm_bdf    ; work         ;
+; |t1a_fs_pwm_bdf                 ; 13 (0)      ; 10 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 8    ; 0            ; 3 (0)        ; 1 (0)             ; 9 (0)            ; |t1a_fs_pwm_bdf                            ; t1a_fs_pwm_bdf    ; work         ;
 ;    |frequency_scaling:b2v_inst| ; 5 (5)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 3 (3)            ; |t1a_fs_pwm_bdf|frequency_scaling:b2v_inst ; frequency_scaling ; work         ;
-;    |pwm_generator:b2v_inst1|    ; 12 (12)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 1 (1)             ; 8 (8)            ; |t1a_fs_pwm_bdf|pwm_generator:b2v_inst1    ; pwm_generator     ; work         ;
+;    |pwm_generator:b2v_inst1|    ; 8 (8)       ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 6 (6)            ; |t1a_fs_pwm_bdf|pwm_generator:b2v_inst1    ; pwm_generator     ; work         ;
 +---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -702,8 +702,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; clk_3125KHz   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; duty_cycle[3] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; duty_cycle[2] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; duty_cycle[0] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; duty_cycle[1] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; duty_cycle[1] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; duty_cycle[0] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; clk_50M       ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +---------------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -717,34 +717,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pwm_generator:b2v_inst1|LessThan0~2 ; 1                 ; 6       ;
 ; duty_cycle[2]                              ;                   ;         ;
 ;      - pwm_generator:b2v_inst1|LessThan0~1 ; 0                 ; 6       ;
-; duty_cycle[0]                              ;                   ;         ;
-;      - pwm_generator:b2v_inst1|LessThan0~0 ; 1                 ; 6       ;
 ; duty_cycle[1]                              ;                   ;         ;
-;      - pwm_generator:b2v_inst1|LessThan0~0 ; 1                 ; 6       ;
+;      - pwm_generator:b2v_inst1|LessThan0~0 ; 0                 ; 6       ;
+; duty_cycle[0]                              ;                   ;         ;
+;      - pwm_generator:b2v_inst1|LessThan0~0 ; 0                 ; 6       ;
 ; clk_50M                                    ;                   ;         ;
 +--------------------------------------------+-------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                          ;
-+----------------------------------------+----------------+---------+-------+--------+----------------------+------------------+---------------------------+
-; Name                                   ; Location       ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------+----------------+---------+-------+--------+----------------------+------------------+---------------------------+
-; clk_50M                                ; PIN_E1         ; 4       ; Clock ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; frequency_scaling:b2v_inst|clk_3125KHz ; FF_X28_Y1_N29  ; 4       ; Clock ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; pwm_generator:b2v_inst1|clk_195KHz     ; FF_X25_Y33_N31 ; 5       ; Clock ; yes    ; Global Clock         ; GCLK14           ; --                        ;
-+----------------------------------------+----------------+---------+-------+--------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                         ;
++----------------------------------------+---------------+---------+-------+--------+----------------------+------------------+---------------------------+
+; Name                                   ; Location      ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------------------+---------------+---------+-------+--------+----------------------+------------------+---------------------------+
+; clk_50M                                ; PIN_E1        ; 4       ; Clock ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; frequency_scaling:b2v_inst|clk_3125KHz ; FF_X28_Y1_N29 ; 6       ; Clock ; yes    ; Global Clock         ; GCLK17           ; --                        ;
++----------------------------------------+---------------+---------+-------+--------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                    ;
-+----------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                                   ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk_50M                                ; PIN_E1         ; 4       ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
-; frequency_scaling:b2v_inst|clk_3125KHz ; FF_X28_Y1_N29  ; 4       ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
-; pwm_generator:b2v_inst1|clk_195KHz     ; FF_X25_Y33_N31 ; 5       ; 0                                    ; Global Clock         ; GCLK14           ; --                        ;
-+----------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                   ;
++----------------------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                                   ; Location      ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; clk_50M                                ; PIN_E1        ; 4       ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
+; frequency_scaling:b2v_inst|clk_3125KHz ; FF_X28_Y1_N29 ; 6       ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
++----------------------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +-----------------------------------------------+
@@ -752,30 +750,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 17 / 71,559 ( < 1 % ) ;
+; Block interconnects   ; 15 / 71,559 ( < 1 % ) ;
 ; C16 interconnects     ; 0 / 2,597 ( 0 % )     ;
-; C4 interconnects      ; 13 / 46,848 ( < 1 % ) ;
+; C4 interconnects      ; 11 / 46,848 ( < 1 % ) ;
 ; Direct links          ; 4 / 71,559 ( < 1 % )  ;
-; Global clocks         ; 3 / 20 ( 15 % )       ;
-; Local interconnects   ; 12 / 24,624 ( < 1 % ) ;
-; R24 interconnects     ; 1 / 2,496 ( < 1 % )   ;
-; R4 interconnects      ; 7 / 62,424 ( < 1 % )  ;
+; Global clocks         ; 2 / 20 ( 10 % )       ;
+; Local interconnects   ; 9 / 24,624 ( < 1 % )  ;
+; R24 interconnects     ; 0 / 2,496 ( 0 % )     ;
+; R4 interconnects      ; 4 / 62,424 ( < 1 % )  ;
 +-----------------------+-----------------------+
 
 
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 5.67) ; Number of LABs  (Total = 3) ;
+; Number of Logic Elements  (Average = 6.50) ; Number of LABs  (Total = 2) ;
 +--------------------------------------------+-----------------------------+
 ; 1                                          ; 0                           ;
 ; 2                                          ; 0                           ;
 ; 3                                          ; 0                           ;
 ; 4                                          ; 0                           ;
-; 5                                          ; 2                           ;
+; 5                                          ; 1                           ;
 ; 6                                          ; 0                           ;
-; 7                                          ; 1                           ;
-; 8                                          ; 0                           ;
+; 7                                          ; 0                           ;
+; 8                                          ; 1                           ;
 ; 9                                          ; 0                           ;
 ; 10                                         ; 0                           ;
 ; 11                                         ; 0                           ;
@@ -790,16 +788,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.00) ; Number of LABs  (Total = 3) ;
+; LAB-wide Signals  (Average = 1.00) ; Number of LABs  (Total = 2) ;
 +------------------------------------+-----------------------------+
-; 1 Clock                            ; 3                           ;
+; 1 Clock                            ; 2                           ;
 +------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 10.00) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced  (Average = 11.50) ; Number of LABs  (Total = 2) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -810,30 +808,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 6                                            ; 0                           ;
 ; 7                                            ; 0                           ;
 ; 8                                            ; 0                           ;
-; 9                                            ; 2                           ;
+; 9                                            ; 1                           ;
 ; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
-; 12                                           ; 1                           ;
+; 12                                           ; 0                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 1.00) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced Out  (Average = 1.50) ; Number of LABs  (Total = 2) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 3                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 2.33) ; Number of LABs  (Total = 3) ;
+; Number of Distinct Inputs  (Average = 3.00) ; Number of LABs  (Total = 2) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 2                           ;
+; 1                                           ; 1                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
@@ -907,8 +908,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; clk_3125KHz        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; duty_cycle[3]      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; duty_cycle[2]      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; duty_cycle[0]      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; duty_cycle[1]      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; duty_cycle[0]      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk_50M            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
@@ -949,14 +950,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                                       ;
-+----------------------------------------+----------------------------------------+-------------------+
-; Source Clock(s)                        ; Destination Clock(s)                   ; Delay Added in ns ;
-+----------------------------------------+----------------------------------------+-------------------+
-; clk_50M                                ; clk_50M                                ; 2.6               ;
-; frequency_scaling:b2v_inst|clk_3125KHz ; frequency_scaling:b2v_inst|clk_3125KHz ; 2.5               ;
-+----------------------------------------+----------------------------------------+-------------------+
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
+; clk_50M         ; clk_50M              ; 2.6               ;
++-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
@@ -967,15 +967,11 @@ This will disable optimization of problematic paths and expose them for further 
 ; Source Register                        ; Destination Register                   ; Delay Added in ns ;
 +----------------------------------------+----------------------------------------+-------------------+
 ; frequency_scaling:b2v_inst|clk_3125KHz ; frequency_scaling:b2v_inst|clk_3125KHz ; 2.618             ;
-; pwm_generator:b2v_inst1|clk_195KHz     ; pwm_generator:b2v_inst1|clk_195KHz     ; 2.493             ;
-; pwm_generator:b2v_inst1|counter[0]     ; pwm_generator:b2v_inst1|clk_195KHz     ; 0.645             ;
-; pwm_generator:b2v_inst1|counter[1]     ; pwm_generator:b2v_inst1|clk_195KHz     ; 0.645             ;
-; pwm_generator:b2v_inst1|counter[2]     ; pwm_generator:b2v_inst1|clk_195KHz     ; 0.645             ;
 ; frequency_scaling:b2v_inst|counter[0]  ; frequency_scaling:b2v_inst|clk_3125KHz ; 0.621             ;
 ; frequency_scaling:b2v_inst|counter[1]  ; frequency_scaling:b2v_inst|clk_3125KHz ; 0.621             ;
 ; frequency_scaling:b2v_inst|counter[2]  ; frequency_scaling:b2v_inst|clk_3125KHz ; 0.621             ;
 +----------------------------------------+----------------------------------------+-------------------+
-Note: This table only shows the top 8 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 4 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1005,18 +1001,13 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clk_50M~input (placed in PIN E1 (CLK1, DIFFCLK_0n)) File: D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/t1a_fs_pwm_bdf.v Line: 29
+Info (176353): Automatically promoted node clk_50M~input (placed in PIN E1 (CLK1, DIFFCLK_0n)) File: D:/eyantra/2023eyrc_astrotinker/Task_1/t1a_fs_pwm/t1a_fs_pwm/t1a_fs_pwm_bdf.v Line: 29
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info (176353): Automatically promoted node pwm_generator:b2v_inst1|clk_195KHz  File: D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/pwm_generator.v Line: 23
+Info (176353): Automatically promoted node frequency_scaling:b2v_inst|clk_3125KHz  File: D:/eyantra/2023eyrc_astrotinker/Task_1/t1a_fs_pwm/t1a_fs_pwm/frequency_scaling.v Line: 23
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node pwm_generator:b2v_inst1|clk_195KHz~0 File: D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/pwm_generator.v Line: 23
-        Info (176357): Destination node clk_195KHz~output File: D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/t1a_fs_pwm_bdf.v Line: 32
-Info (176353): Automatically promoted node frequency_scaling:b2v_inst|clk_3125KHz  File: D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/frequency_scaling.v Line: 23
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node frequency_scaling:b2v_inst|clk_3125KHz~0 File: D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/frequency_scaling.v Line: 23
-        Info (176357): Destination node clk_3125KHz~output File: D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/t1a_fs_pwm_bdf.v Line: 33
+        Info (176357): Destination node frequency_scaling:b2v_inst|clk_3125KHz~0 File: D:/eyantra/2023eyrc_astrotinker/Task_1/t1a_fs_pwm/t1a_fs_pwm/frequency_scaling.v Line: 23
+        Info (176357): Destination node clk_3125KHz~output File: D:/eyantra/2023eyrc_astrotinker/Task_1/t1a_fs_pwm/t1a_fs_pwm/t1a_fs_pwm_bdf.v Line: 33
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -1046,16 +1037,16 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.24 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.26 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_files/t1a_fs_pwm.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (144001): Generated suppressed messages file D:/eyantra/2023eyrc_astrotinker/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_files/t1a_fs_pwm.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5820 megabytes
-    Info: Processing ended: Sun Oct 08 15:36:10 2023
+    Info: Peak virtual memory: 5817 megabytes
+    Info: Processing ended: Thu Oct 12 21:49:03 2023
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:05
 
@@ -1063,6 +1054,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/eyantra/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_files/t1a_fs_pwm.fit.smsg.
+The suppressed messages can be found in D:/eyantra/2023eyrc_astrotinker/Task_1/t1a_fs_pwm/t1a_fs_pwm/output_files/t1a_fs_pwm.fit.smsg.
 
 

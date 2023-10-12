@@ -35,8 +35,8 @@ if (!counter) clk_195KHz=~clk_195KHz;
 counter=counter+1'b1;
 end
 
-always @ (posedge clk_195KHz) begin 
-if (cycle<=duty_cycle) pwm_signal=1;
+always @ (posedge clk_3125KHz) begin 
+if (cycle<duty_cycle) pwm_signal=1;
 else pwm_signal=0;
 
 cycle=cycle+1'b1;
